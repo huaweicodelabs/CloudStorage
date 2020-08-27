@@ -13,7 +13,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "Replace the app package name with your own app package name on AppGallery Connect (AGC)."
-        minSdkVersion 24
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -54,5 +54,5 @@ dependencies {
     implementation 'com.huawei.agconnect:agconnect-core:1.4.0.300'
     implementation 'com.huawei.agconnect:agconnect-auth:1.4.0.300'
     //agconnect-storage
-    implementation 'com.huawei.agconnect:agconnect-storage:1.3.0.200'
+    implementation 'com.huawei.agconnect:agconnect-storage:1.3.0.300'
 }
