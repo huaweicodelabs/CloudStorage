@@ -1,4 +1,4 @@
-# NearbyMessageDemo-AGCCloudStorageAndroidSDK
+# CloudStorage Demo
 ## Contents
  * [Introduction](#introduction)
  * [Supported Environments](#supported-environments)
