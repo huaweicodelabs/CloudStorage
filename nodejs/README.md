@@ -23,7 +23,7 @@ API References: https://developer.huawei.com/consumer/cn/doc/development/AppGall
 
 5. File management: The application client can call the API of the cloud storage SDK to perform operations such as uploading files, downloading files, deleting files, and modifying file metadata.
 
-#Demo Testing
+## Demo Testing
 1. Download an API client authentication credential and modify the Path parameter.
 2. Fill 'bucketName' parameter with storage instance name. You can obtain the storage instance name from the storage instance box on the **Project settings > Build > Cloud Storage** page of AppGallery Connect.
 3. Uncomment related methods in the demo to call them.

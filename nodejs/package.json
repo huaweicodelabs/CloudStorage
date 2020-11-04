@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@agconnect/cloudstorage-server": "1.0.0-sdv.3"
+    "@agconnect/cloudstorage-server": "1.0.0"
   }
 }
