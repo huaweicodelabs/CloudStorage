@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFCAE3B450F6A74870D2388D /* Pods_AGC_Storage_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B64FBCC70568D8B2B44ACB1 /* Pods_AGC_Storage_1.framework */; };
+		FF8E7ECE286C348D00C95822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E7ECD286C348D00C95822 /* AppDelegate.swift */; };
+		FF8E7ED0286C348D00C95822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E7ECF286C348D00C95822 /* SceneDelegate.swift */; };
+		FF8E7ED2286C348D00C95822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8E7ED1286C348D00C95822 /* ViewController.swift */; };
+		FF8E7ED5286C348D00C95822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8E7ED3286C348D00C95822 /* Main.storyboard */; };
+		FF8E7ED7286C348F00C95822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8E7ED6286C348F00C95822 /* Assets.xcassets */; };
+		FF8E7EDA286C348F00C95822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8E7ED8286C348F00C95822 /* LaunchScreen.storyboard */; };
+		FF8E89E3286D2F42007A1A11 /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF8E89E2286D2F42007A1A11 /* agconnect-services.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AC8691820B85D82B8730452 /* Pods-AGC-Storage-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGC-Storage-1.debug.xcconfig"; path = "Target Support Files/Pods-AGC-Storage-1/Pods-AGC-Storage-1.debug.xcconfig"; sourceTree = "<group>"; };
+		8B64FBCC70568D8B2B44ACB1 /* Pods_AGC_Storage_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGC_Storage_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DD173E039E0C5C4A9E14E3 /* Pods-AGC-Storage-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGC-Storage-1.release.xcconfig"; path = "Target Support Files/Pods-AGC-Storage-1/Pods-AGC-Storage-1.release.xcconfig"; sourceTree = "<group>"; };
+		FF8E7ECA286C348D00C95822 /* AGC-Storage-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AGC-Storage-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8E7ECD286C348D00C95822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF8E7ECF286C348D00C95822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF8E7ED1286C348D00C95822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF8E7ED4286C348D00C95822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF8E7ED6286C348F00C95822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF8E7ED9286C348F00C95822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF8E7EDB286C348F00C95822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8E89E2286D2F42007A1A11 /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "agconnect-services.plist"; path = "../../../7云函数/Easy/AGC-Function-1/agconnect-services.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF8E7EC7286C348D00C95822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCAE3B450F6A74870D2388D /* Pods_AGC_Storage_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9268A01265320BDBB72C76E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AC8691820B85D82B8730452 /* Pods-AGC-Storage-1.debug.xcconfig */,
+				F9DD173E039E0C5C4A9E14E3 /* Pods-AGC-Storage-1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D420D3DB009EBC7535D55BE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B64FBCC70568D8B2B44ACB1 /* Pods_AGC_Storage_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF8E7EC1286C348D00C95822 = {
+			isa = PBXGroup;
+			children = (
+				FF8E89E2286D2F42007A1A11 /* agconnect-services.plist */,
+				FF8E7ECC286C348D00C95822 /* AGC-Storage-1 */,
+				FF8E7ECB286C348D00C95822 /* Products */,
+				9268A01265320BDBB72C76E2 /* Pods */,
+				D420D3DB009EBC7535D55BE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF8E7ECB286C348D00C95822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E7ECA286C348D00C95822 /* AGC-Storage-1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF8E7ECC286C348D00C95822 /* AGC-Storage-1 */ = {
+			isa = PBXGroup;
+			children = (
+				FF8E7ECD286C348D00C95822 /* AppDelegate.swift */,
+				FF8E7ECF286C348D00C95822 /* SceneDelegate.swift */,
+				FF8E7ED1286C348D00C95822 /* ViewController.swift */,
+				FF8E7ED3286C348D00C95822 /* Main.storyboard */,
+				FF8E7ED6286C348F00C95822 /* Assets.xcassets */,
+				FF8E7ED8286C348F00C95822 /* LaunchScreen.storyboard */,
+				FF8E7EDB286C348F00C95822 /* Info.plist */,
+			);
+			path = "AGC-Storage-1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF8E7EC9286C348D00C95822 /* AGC-Storage-1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8E7EDE286C348F00C95822 /* Build configuration list for PBXNativeTarget "AGC-Storage-1" */;
+			buildPhases = (
+				187727A65B2FED7EB76DB8B9 /* [CP] Check Pods Manifest.lock */,
+				FF8E7EC6286C348D00C95822 /* Sources */,
+				FF8E7EC7286C348D00C95822 /* Frameworks */,
+				FF8E7EC8286C348D00C95822 /* Resources */,
+				3B107E31D2462A36B48563E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AGC-Storage-1";
+			productName = "AGC-Storage-1";
+			productReference = FF8E7ECA286C348D00C95822 /* AGC-Storage-1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF8E7EC2286C348D00C95822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FF8E7EC9286C348D00C95822 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = FF8E7EC5286C348D00C95822 /* Build configuration list for PBXProject "AGC-Storage-1" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF8E7EC1286C348D00C95822;
+			productRefGroup = FF8E7ECB286C348D00C95822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF8E7EC9286C348D00C95822 /* AGC-Storage-1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF8E7EC8286C348D00C95822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8E7EDA286C348F00C95822 /* LaunchScreen.storyboard in Resources */,
+				FF8E89E3286D2F42007A1A11 /* agconnect-services.plist in Resources */,
+				FF8E7ED7286C348F00C95822 /* Assets.xcassets in Resources */,
+				FF8E7ED5286C348D00C95822 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187727A65B2FED7EB76DB8B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AGC-Storage-1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B107E31D2462A36B48563E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AGC-Storage-1/Pods-AGC-Storage-1-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AGC-Storage-1/Pods-AGC-Storage-1-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AGC-Storage-1/Pods-AGC-Storage-1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF8E7EC6286C348D00C95822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8E7ED2286C348D00C95822 /* ViewController.swift in Sources */,
+				FF8E7ECE286C348D00C95822 /* AppDelegate.swift in Sources */,
+				FF8E7ED0286C348D00C95822 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF8E7ED3286C348D00C95822 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8E7ED4286C348D00C95822 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF8E7ED8286C348F00C95822 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF8E7ED9286C348F00C95822 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF8E7EDC286C348F00C95822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF8E7EDD286C348F00C95822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF8E7EDF286C348F00C95822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC8691820B85D82B8730452 /* Pods-AGC-Storage-1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AGC-Storage-1/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucky.agc.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF8E7EE0286C348F00C95822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DD173E039E0C5C4A9E14E3 /* Pods-AGC-Storage-1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AGC-Storage-1/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucky.agc.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF8E7EC5286C348D00C95822 /* Build configuration list for PBXProject "AGC-Storage-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8E7EDC286C348F00C95822 /* Debug */,
+				FF8E7EDD286C348F00C95822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8E7EDE286C348F00C95822 /* Build configuration list for PBXNativeTarget "AGC-Storage-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8E7EDF286C348F00C95822 /* Debug */,
+				FF8E7EE0286C348F00C95822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF8E7EC2286C348D00C95822 /* Project object */;
+}
