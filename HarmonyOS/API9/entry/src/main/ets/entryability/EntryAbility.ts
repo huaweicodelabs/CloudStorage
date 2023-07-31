@@ -8,19 +8,17 @@ import agconnect from '@hw-agconnect/api-ohos';
 //import agconnect.instance()
 import "@hw-agconnect/core-ohos";
 
-//import agconnect.cloudstorage
-import "@hw-agconnect/cloudstorage-ohos";
-
 //import agconnect.auth
 import "@hw-agconnect/auth-ohos";
 
+//import agconnect.cloudstorage
+import "@hw-agconnect/cloudstorage-ohos";
 
 export default class EntryAbility extends UIAbility {
     onCreate(want, launchParam) {
         // init agc sdk
-        agconnect.instance().init(this.context.getApplicationContext());
-        globalThis.agconnect = agconnect;
-
+        agconnect.instance().init(this.context);
+        globalThis.auth = agconnect.auth();
 
         hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
     }
