@@ -1,3 +1,4 @@
+import buffer from '@ohos.buffer';
 import { Logger } from "@hw-agconnect/base-ohos";
 import { AGConnectServicesConfig } from "../../../types";
 import { AGCRoutePolicy } from "../../../index";
@@ -128,10 +129,7 @@ export class ServicesConfigImpl implements AGConnectServicesConfig {
 
   async getConfigFromResources(): Promise<void> {
     let value = await this.appContext.resourceManager.getRawFile(JSON_FILE_NAME);
-    let json = "";
-    for (var i = 0; i < value.length; i++) {
-      json += String.fromCharCode(value[i]);
-    }
+    let json: string = buffer.from(value).toString("utf8");
     this.config = JSON.parse(json);
     if (this.config != null) {
       Logger.info(TAG, "get config from raw file success.");
@@ -210,5 +208,4 @@ export class ServicesConfigImpl implements AGConnectServicesConfig {
       this[key] = this.config[key];
     }
   }
-
 }

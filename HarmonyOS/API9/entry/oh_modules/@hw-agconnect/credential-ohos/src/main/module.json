@@ -6,7 +6,9 @@
 		"versionName": "1.0.0",
 		"minAPIVersion": 9,
 		"targetAPIVersion": 9,
-		"apiReleaseType": "Release"
+		"apiReleaseType": "Release",
+		"compileSdkVersion": "3.2.11.5",
+		"compileSdkType": "OpenHarmony"
 	},
 	"module": {
 		"name": "agconnect-credential",

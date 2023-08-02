@@ -9,7 +9,7 @@
   "description": "AppGalleryConnectSDK core for OpenHarmony",
   "main": "index.ts",
   "type": "module",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "dependencies": {
     "@hw-agconnect/api-ohos": "^1.1.2",
     "@hw-agconnect/base-ohos": "^1.1.2"

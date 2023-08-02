@@ -8,18 +8,18 @@
       "phone"
     ],
     "deliveryWithInstall": true,
-    "installationFree": false,
+    "installationFree": true,
     "pages": "$profile:main_pages",
     "abilities": [
       {
         "name": "EntryAbility",
-        "srcEntrance": "./ets/entryability/EntryAbility.ts",
+        "srcEntry": "./ets/entryability/EntryAbility.ts",
         "description": "$string:EntryAbility_desc",
         "icon": "$media:icon",
         "label": "$string:EntryAbility_label",
         "startWindowIcon": "$media:icon",
         "startWindowBackground": "$color:start_window_background",
-        "visible": true,
+        "exported": true,
         "skills": [
           {
             "entities": [
@@ -28,6 +28,21 @@
             "actions": [
               "action.system.home"
             ]
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "EntryFormAbility",
+        "srcEntry": "./ets/entryformability/EntryFormAbility.ts",
+        "label": "$string:EntryFormAbility_label",
+        "description": "$string:EntryFormAbility_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
           }
         ]
       }

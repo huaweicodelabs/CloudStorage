@@ -11,6 +11,22 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+    {
+      "name": "EntryFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "EntryFormAbility_label",
+      "value": "form_label"
+    },
+    {
+      "name": "title_immersive",
+      "value": "今日美食推荐"
+    },
+    {
+      "name": "detail_immersive",
+      "value": "一碗香喷喷的炸酱面，回到儿时的青涩回忆"
     }
   ]
 }

@@ -1,5 +1,6 @@
 {
   "apiType": 'stageMode',
+  "showInServiceCenter": true,
   "buildOption": {
   },
   "targets": [

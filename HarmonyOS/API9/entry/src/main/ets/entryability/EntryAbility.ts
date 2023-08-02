@@ -2,56 +2,45 @@ import UIAbility from '@ohos.app.ability.UIAbility';
 import hilog from '@ohos.hilog';
 import window from '@ohos.window';
 
-// import agconnect
 import agconnect from '@hw-agconnect/api-ohos';
-
-//import agconnect.instance()
 import "@hw-agconnect/core-ohos";
-
-//import agconnect.auth
-import "@hw-agconnect/auth-ohos";
-
-//import agconnect.cloudstorage
 import "@hw-agconnect/cloudstorage-ohos";
 
 export default class EntryAbility extends UIAbility {
-    onCreate(want, launchParam) {
-        // init agc sdk
-        agconnect.instance().init(this.context);
-        globalThis.auth = agconnect.auth();
+  onCreate(want, launchParam) {
+    agconnect.instance().init(this.context.getApplicationContext());
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
+  }
 
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
-    }
+  onDestroy() {
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onDestroy');
+  }
 
-    onDestroy() {
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onDestroy');
-    }
+  onWindowStageCreate(windowStage: window.WindowStage) {
+    // Main window is created, set main page for this ability
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
-    onWindowStageCreate(windowStage: window.WindowStage) {
-        // Main window is created, set main page for this ability
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
+    windowStage.loadContent('pages/Index', (err, data) => {
+      if (err.code) {
+        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
+        return;
+      }
+      hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');
+    });
+  }
 
-        windowStage.loadContent('pages/Index', (err, data) => {
-            if (err.code) {
-                hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
-                return;
-            }
-            hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');
-        });
-    }
+  onWindowStageDestroy() {
+    // Main window is destroyed, release UI related resources
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');
+  }
 
-    onWindowStageDestroy() {
-        // Main window is destroyed, release UI related resources
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageDestroy');
-    }
+  onForeground() {
+    // Ability has brought to foreground
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');
+  }
 
-    onForeground() {
-        // Ability has brought to foreground
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onForeground');
-    }
-
-    onBackground() {
-        // Ability has back to background
-        hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
-    }
+  onBackground() {
+    // Ability has back to background
+    hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
+  }
 }
